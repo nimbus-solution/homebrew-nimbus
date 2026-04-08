@@ -1,6 +1,10 @@
 # homebrew-nimbus
 
-Homebrew tap for [Nimbus](https://testnimbus.dev) — local Apex test runner for Salesforce developers.
+Official Homebrew tap for **Nimbus** — run Salesforce Apex tests locally, without an org.
+
+No Docker. No sandbox. Results in seconds.
+
+---
 
 ## Install
 
@@ -14,3 +18,13 @@ brew install nimbus
 ```sh
 brew upgrade nimbus
 ```
+
+## Verify
+
+```sh
+nimbus --version
+```
+
+---
+
+[Documentation](https://testnimbus.dev/docs) · [Website](https://testnimbus.dev)
