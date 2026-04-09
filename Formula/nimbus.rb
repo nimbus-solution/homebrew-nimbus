@@ -5,21 +5,21 @@
 class Nimbus < Formula
   desc "Local Apex test runner for Salesforce developers"
   homepage "https://testnimbus.dev"
-  version "0.1.4"
+  version "0.1.5"
   license "MIT"
 
   on_macos do
     if Hardware::CPU.intel?
-      url "https://github.com/nimbus-solution/nimbus-releases/releases/download/v0.1.4/nimbus_0.1.4_darwin_amd64.tar.gz"
-      sha256 "7e00885d918b801e70b46223f078e6ef3e56313d282cfd75da2f6e5211b6bbf8"
+      url "https://github.com/Oblitus/nimbus/releases/download/v0.1.5/nimbus_0.1.5_darwin_amd64.tar.gz"
+      sha256 "588bc667004d34fc260bff6b1b13803817c45803765f16e1d03daaab7e560d8c"
 
       define_method(:install) do
         bin.install "nimbus"
       end
     end
     if Hardware::CPU.arm?
-      url "https://github.com/nimbus-solution/nimbus-releases/releases/download/v0.1.4/nimbus_0.1.4_darwin_arm64.tar.gz"
-      sha256 "b809f28e093d0ac38bbf4dbf7c5f99a6836fdc6ca549d2928fa07462296ea901"
+      url "https://github.com/Oblitus/nimbus/releases/download/v0.1.5/nimbus_0.1.5_darwin_arm64.tar.gz"
+      sha256 "a9ee199530a43a0e69b466d4ab114a06f68d2ce922a52341ae9c8d6fe8300bf5"
 
       define_method(:install) do
         bin.install "nimbus"
@@ -29,15 +29,15 @@ class Nimbus < Formula
 
   on_linux do
     if Hardware::CPU.intel? && Hardware::CPU.is_64_bit?
-      url "https://github.com/nimbus-solution/nimbus-releases/releases/download/v0.1.4/nimbus_0.1.4_linux_amd64.tar.gz"
-      sha256 "9225e9426fab2acd57a98bcb52e95f94cd6dbc2276ff2137b0efb1296b5f0b6f"
+      url "https://github.com/Oblitus/nimbus/releases/download/v0.1.5/nimbus_0.1.5_linux_amd64.tar.gz"
+      sha256 "ef40602a8cee22b6c42fe7bcf40460ce0bb476db1c01c9e1c664426c8d6a5c20"
       define_method(:install) do
         bin.install "nimbus"
       end
     end
     if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
-      url "https://github.com/nimbus-solution/nimbus-releases/releases/download/v0.1.4/nimbus_0.1.4_linux_arm64.tar.gz"
-      sha256 "67ac02393a2d1830255e91cbd979a5e032e1f3e04959c54a9f26a60a21f361df"
+      url "https://github.com/Oblitus/nimbus/releases/download/v0.1.5/nimbus_0.1.5_linux_arm64.tar.gz"
+      sha256 "1c36ebb61cb011753c238b5d755948247317ab646c940986e8d216d4390c3bdc"
       define_method(:install) do
         bin.install "nimbus"
       end
