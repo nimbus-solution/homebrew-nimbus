@@ -51,7 +51,7 @@ Real SOQL. Real triggers. Real DML. Backed by an embedded PostgreSQL database â€
 
 ```sh
 brew tap nimbus-solution/nimbus
-brew install nimbus
+brew install nimbus-solution/nimbus/nimbus
 ```
 
 ## Upgrade
