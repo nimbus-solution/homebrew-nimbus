@@ -10,16 +10,16 @@ class Nimbus < Formula
 
   on_macos do
     if Hardware::CPU.intel?
-      url "https://github.com/nimbus-solution/nimbus/releases/download/v1.1.7/nimbus_1.1.7_darwin_amd64.tar.gz"
-      sha256 "cae8ce8be77954159c624f7819b25b5950c0c188a3fe0dd53230e560d614b270"
+      url "https://github.com/Oblitus/nimbus/releases/download/v1.1.7/nimbus_1.1.7_darwin_amd64.tar.gz"
+      sha256 "59bb79b8cc647e7c613602fff7b4f1612472809fc08ea6d098e0ef7cdd953f73"
 
       define_method(:install) do
         bin.install "nimbus"
       end
     end
     if Hardware::CPU.arm?
-      url "https://github.com/nimbus-solution/nimbus/releases/download/v1.1.7/nimbus_1.1.7_darwin_arm64.tar.gz"
-      sha256 "a4d1fb79238b74d33f27060d452149f21abb7177dfb91f0b2c0053d869f3beaf"
+      url "https://github.com/Oblitus/nimbus/releases/download/v1.1.7/nimbus_1.1.7_darwin_arm64.tar.gz"
+      sha256 "27ce99369cafaff12f3d577cdec64dea4725c8e5fab580a5ab6ecfc594465908"
 
       define_method(:install) do
         bin.install "nimbus"
@@ -29,15 +29,15 @@ class Nimbus < Formula
 
   on_linux do
     if Hardware::CPU.intel? && Hardware::CPU.is_64_bit?
-      url "https://github.com/nimbus-solution/nimbus/releases/download/v1.1.7/nimbus_1.1.7_linux_amd64.tar.gz"
-      sha256 "3f2f60fda22af1560332ab3155dbed5898e354e5c77a7840448437faa1f0d77a"
+      url "https://github.com/Oblitus/nimbus/releases/download/v1.1.7/nimbus_1.1.7_linux_amd64.tar.gz"
+      sha256 "c325f7d2b9d3ff24caa9ecd9dcad4c0979bdbfe50b9d4c4adf36d1e327da24dd"
       define_method(:install) do
         bin.install "nimbus"
       end
     end
     if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
-      url "https://github.com/nimbus-solution/nimbus/releases/download/v1.1.7/nimbus_1.1.7_linux_arm64.tar.gz"
-      sha256 "56f638d7fc08f14a4b639a8169ef30e3617e715a56ddb1b11fcd69b04fe27c2b"
+      url "https://github.com/Oblitus/nimbus/releases/download/v1.1.7/nimbus_1.1.7_linux_arm64.tar.gz"
+      sha256 "a5dccaf99cfda24c9294afd607636a89e6cc5fe885791c259a485353470b8a7d"
       define_method(:install) do
         bin.install "nimbus"
       end
