@@ -10,7 +10,7 @@ class Nimbus < Formula
 
   on_macos do
     if Hardware::CPU.intel?
-      url "https://github.com/Oblitus/nimbus/releases/download/v1.42.0/nimbus_1.42.0_darwin_amd64.tar.gz"
+      url "https://github.com/nimbus-solution/nimbus/releases/download/v1.42.0/nimbus_1.42.0_darwin_amd64.tar.gz"
       sha256 "c2f493a3daf502154f73e5cb853fab6395eed196a333dddabff9e602a300c6e7"
 
       define_method(:install) do
@@ -18,7 +18,7 @@ class Nimbus < Formula
       end
     end
     if Hardware::CPU.arm?
-      url "https://github.com/Oblitus/nimbus/releases/download/v1.42.0/nimbus_1.42.0_darwin_arm64.tar.gz"
+      url "https://github.com/nimbus-solution/nimbus/releases/download/v1.42.0/nimbus_1.42.0_darwin_arm64.tar.gz"
       sha256 "9e087ff6339f74274e0adbc9bfc8bd4acbcc25606a6fbcbc06b52bf56fc1536b"
 
       define_method(:install) do
@@ -29,14 +29,14 @@ class Nimbus < Formula
 
   on_linux do
     if Hardware::CPU.intel? && Hardware::CPU.is_64_bit?
-      url "https://github.com/Oblitus/nimbus/releases/download/v1.42.0/nimbus_1.42.0_linux_amd64.tar.gz"
+      url "https://github.com/nimbus-solution/nimbus/releases/download/v1.42.0/nimbus_1.42.0_linux_amd64.tar.gz"
       sha256 "e8609deabcdbd74d320a2cf6db8f3f3da5a2aa69bdb4e5c716e3ba7690e5c9d1"
       define_method(:install) do
         bin.install "nimbus"
       end
     end
     if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
-      url "https://github.com/Oblitus/nimbus/releases/download/v1.42.0/nimbus_1.42.0_linux_arm64.tar.gz"
+      url "https://github.com/nimbus-solution/nimbus/releases/download/v1.42.0/nimbus_1.42.0_linux_arm64.tar.gz"
       sha256 "5e73a61abbbce063192e663c3655f5594493e6864df5ae6c6a3ef45a9454cb59"
       define_method(:install) do
         bin.install "nimbus"
