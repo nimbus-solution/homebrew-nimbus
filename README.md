@@ -1,6 +1,6 @@
 # homebrew-nimbus
 
-Official Homebrew tap for **[Nimbus](https://testnimbus.dev)** — run Salesforce Apex tests locally, without an org.
+Official Homebrew tap for **[Renmy](https://renmy.net)** (formerly Nimbus) — run Salesforce Apex tests locally, without an org.
 
 ---
 
@@ -10,12 +10,12 @@ Running Apex tests requires a connected Salesforce org. That means waiting for s
 
 Meanwhile, every other language just runs tests locally.
 
-## What Nimbus does
+## What Renmy does
 
-Nimbus runs your Apex tests on your machine — no Salesforce connection, no Docker, no setup beyond pointing it at your SFDX project.
+Renmy runs your Apex tests on your machine — no Salesforce connection, no Docker, no setup beyond pointing it at your SFDX project.
 
 ```
-❯ nimbus test "*"
+❯ renmy test "*"
 
   ✓  AccountServiceTest.testCreateAccount     12ms
   ✓  AccountServiceTest.testBulkInsert         8ms
@@ -50,22 +50,26 @@ Real SOQL. Real triggers. Real DML. Backed by an embedded PostgreSQL database �
 ## Install
 
 ```sh
-brew tap nimbus-solution/nimbus
-brew install nimbus-solution/nimbus/nimbus
+brew tap renmy-solutions/nimbus
+brew install renmy-solutions/nimbus/renmy
 ```
+
+The tap keeps the repository name `homebrew-nimbus`. The formula installs `renmy` and a `nimbus` link to it, so the `nimbus` command keeps working.
 
 ## Upgrade
 
 ```sh
-brew upgrade nimbus
+brew upgrade renmy
 ```
+
+An existing install of the `nimbus` formula moves to `renmy` with `brew upgrade nimbus`; the `nimbus` command stays in place.
 
 ## Verify
 
 ```sh
-nimbus --version
+renmy --version
 ```
 
 ---
 
-[Documentation](https://testnimbus.dev/docs) · [Website](https://testnimbus.dev) · [Releases](https://github.com/nimbus-solution/nimbus-releases)
+[Documentation](https://renmy.net/docs) · [Website](https://renmy.net) · [Releases](https://github.com/renmy-solutions/renmy/releases)
